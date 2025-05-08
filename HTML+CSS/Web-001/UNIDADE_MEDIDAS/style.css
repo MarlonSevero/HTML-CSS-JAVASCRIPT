@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.container {
+    width: 80%;
+    margin: 10px auto;
+    padding: var(--space-30);
+    background-color: burlywood;
+}
+
+.container h1{
+    text-align: center;
+    background-color: greenyellow;
+}

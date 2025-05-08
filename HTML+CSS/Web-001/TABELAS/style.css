@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+table{
+    border-collapse: collapse;
+    width: 80%;
+    margin: 30px auto;
+    color: rgb(77, 77, 77);
+}
+
+thead th {
+    height: 40px;
+    background-color: rgb(20, 136, 224);
+    color: aliceblue;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+th, td{
+    padding: 5px;
+    font-size: 17px;
+}
+
+ tbody tr{
+    height: 60px;
+ }
+
+tbody tr:hover{
+    background-color:rgb(171, 171, 171);
+    cursor: pointer;
+}
+
+tfoot td{
+    border-top: 20px solid rgb(20, 136, 224);
+    text-align: center;
+    padding: 20px 0;
+    font-weight: 900;
+}
+
+tbody tr:nth-child(even){
+    background-color: beige;
+}
+
+ th:nth-child(odd), td:nth-child(odd){
+    text-align: center;
+    width: 20%;
+ }
+
+ a {
+    text-decoration: none;
+    color: rgb(20, 136, 224) ;
+ }

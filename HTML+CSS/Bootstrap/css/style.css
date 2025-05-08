@@ -1,0 +1,42 @@
+h5{
+    color: var(--bs-black); /*variaveis do bootstrap*/
+    background-color: var(--bs-blue);
+}
+
+/*Containers - (Basicamente 7 tipos)*/
+
+/*.container, which sets a max-width at each responsive breakpoint
+.container-{breakpoint}, which is width: 100% until the specified breakpoint
+.container-fluid, which is width: 100% at all breakpoints*/
+
+/*SISTEMA DE GRID
+
+Por padrao o GRID trabalha com 12 colunas ao total
+
+<div class="container text-center">
+  <div class="row">
+    <div class="col">
+      1 of 2    #utilizando 6 colunas
+    </div>
+    <div class="col">
+      2 of 2    #utilizando 6 colunas
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      1 of 3 
+    </div>
+    <div class="col">
+      2 of 3
+    </div>
+    <div class="col">
+      3 of 3
+    </div>
+  </div>
+</div>
+
+*/
+
+.myfont{
+        font-family: "Jersey 15", serif;
+}

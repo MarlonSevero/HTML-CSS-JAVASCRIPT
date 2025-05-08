@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="main">
+        <div class="box">
+            <h2>Crie Sua Conta</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, adipisci nam? Ipsa quaerat, voluptates deleniti, alias aperiam ipsam consequatur, ex dolorum obcaecati saepe rem harum dolore sint. Quis assumenda sequi beatae accusantium libero recusandae quaerat dolore dolorum tempora harum sunt soluta fugiat, temporibus dicta eveniet nam! Cumque magnam animi pariatur.</p>
+            <img src="./personal-data-1-78.svg" alt="account">
+
+        </div>
+        <div class="box">
+            <h2>Preencha seus Dados</h2>
+            <!--MAIN FORM-->
+            <form id="data" name="date" method="post" action="" class="formstyle">
+                <div class="box-form-itens">
+                    <label for="name">Nome:</label>
+                    <i class="fa fa-user icon" aria-hidden="true"></i>
+                    <input type="text" name="name" id="name" placeholder="Ex:Fulano" required>
+                </div>
+                <div class="box-form-itens">
+                    <label for="subname">Sobrenome:</label>
+                    <i class="fa fa-user fa-user-tag icon" aria-hidden="true"></i>
+                    <input type="text" name="subname" id="subname" placeholder="Ex:Sobrenome" required>
+                </div>
+
+                <div class="box-form-itens">
+                    <label for="user">Usuario:</label>
+                    <i class="fa-solid fa-user-secret icon" aria-hidden="true"></i>
+                    <input type="text" name="user" id="user" placeholder="Ex:User1234" required>
+                </div>
+
+                <div class="box-form-itens">
+                    <label for="passwd">Usuario:</label>
+                    <i class="fa-solid fa-key icon" aria-hidden="true"></i>
+                    <input type="password" name="passwd" id="passwd" placeholder="Ex:Senha@#$123" required>
+                </div>
+
+                <div class="box-form-itens">
+                    <label for="email">Email:</label>
+                    <i class="fa fa-envelope icon" aria-hidden="true"></i>
+                    <input type="email" name="email" id="email" placeholder="Ex:exemplo@hotmail.com" required>
+                </div>
+
+                <div class="box-form-itens">
+                    <label for="birthdate">Data Nascimento:</label>
+                    <i class="fa fa-birthday-cake icon" aria-hidden="true"></i>
+                    <input type="date" name="birthdate" id="birthdate" placeholder="Ex:22/12/1999" required>
+                </div>
+<!--RADIOS BUTTONS-->
+                <div class="box-form-radio">
+                    <label>Tipo de Conta:</label>
+                    <div class="radio">
+                        <input type="radio" name="account" id="account1">
+                        <label for="account1" >Free</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="account" id="account2">
+                        <label for="account2" >Gold</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="account" id="account3">
+                        <label for="account3" >Premium</label>
+                    </div>
+                </div>
+<!--SELECT-->
+
+                <div class="box-form-itens">
+                    <label for="area" class="select">Area Atuacao</label>
+                    <select name="area" id="area">
+                        <option value="0" disabled selected>Selecione sua opcao</option>
+                        <option value="1">Area 1</option>
+                        <option value="2">Area 2</option>
+                        <option value="3">Area 3</option>
+                    </select>
+                </div>
+<!--Button-->
+                <div class="box-form-button">
+                    <button type="submit">Criar Conta<i class="fa fa-chevron-circle-right arrow" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

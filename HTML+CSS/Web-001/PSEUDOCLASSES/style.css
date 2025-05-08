@@ -1,0 +1,148 @@
+/*PSEUDOCLASSES SAO EFEITOS FORMATADOS CONFORME O ESTADO DO ELEMENTO*/
+
+/*hover: utilizado para quando passar o mouse por cima do elemento
+
+* {
+    box-sizing: border-box;
+}
+
+li {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+li:hover {
+    width: 300px;
+    height: 50px;
+    background-color: blue;
+    color: red;
+    font-size: 20px;
+}
+
+utilizado para elementos filhos
+
+
+.box{
+    width: 150px;
+    height: 50px;
+    border-radius: 7px;
+    border: 1px solid red;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+
+.box2{
+    width: 150px;
+    height: 50px;
+    border-radius: 7px;
+    border: 1px solid rgb(93, 0, 255);
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.box3{
+    width: 150px;
+    height: 50px;
+    border-radius: 7px;
+    border: 1px solid rgb(0, 255, 30);
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.box4{
+    width: 150px;
+    height: 50px;
+    border-radius: 7px;
+    border: 1px solid red;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+nth-child: podemos realizar a formatacao pela `numeracao` do elemento
+odd: somente pares, even somente impares
+.box:nth-child(odd){
+    background-color: red;
+    color: white;
+}
+
+first-child: formatando o primeiro elemento
+.box:first-child{
+    background-color: blue;
+    color: white;
+}
+
+last-child: formatando o ultimo elemento
+.box:last-child{
+    background-color: yellow;
+    color: black;
+}
+
+not: realizando negacao, pegando quem nao tem a classe no-color
+.box2:not(.no-color){
+    background-color: aquamarine;
+    color: black;
+}
+
+is e where: formata um conjunto de elementos, o 'is' tem uma especificidade maior e o where tem uma especificidade zero
+:is(.bg-color, h2, h3, h4){
+    background-color: red;
+    color: white;
+}
+
+h4{
+    background-color: blueviolet;
+}
+
+
+:is(.bg-color, h2, h3, h4){
+    background-color: red;
+    color: white;
+}
+has: valida se existe um elemento dentro do coitainer, se existir ele aplica a formatacao
+.box4:has(p){
+    background-color: blueviolet;
+    color: black;
+}
+*/
+/*-------------------------------------------------------------------------------------------*/
+
+/*PSEUDO ELEMENTOS: UTILIZAMOS DUAS MARCACOES DE DOIS PONTOS. 
+UTILIZADO PARA CONTEUDO OU FORMATACAO ESPECIFICAS
+*/
+
+/*aqui estamos formatando somente a primeira linha do P*/
+p::first-line{
+    background-color: green;
+    font-size: 20px;
+    font-weight:900;
+}
+
+/*seletor, para quando selecionamos uma parte do elemento*/
+p::selection{
+    background-color: red;
+    font-size: 20px;
+    font-weight:900;
+}
+
+
+/*usando after e before*/
+.box6{
+    width: 400px;
+    height: 250px;
+    background-color: rgb(179, 179, 179);
+    border: 1px solid black;
+    text-align: center;
+    padding: 20px;
+}
+
+.box6::before{
+    content: "Segue Dados:";
+    background-color: rgb(142, 141, 141);
+    padding: 10px;
+}
+
+.box6::after{
+    content: "FINAL";
+    background-color: rgb(142, 141, 141);
+    padding: 10px;
+}

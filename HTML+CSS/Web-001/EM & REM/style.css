@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+html{
+    font-size: 40px;
+}
+
+.container {
+    width: 80%;
+    margin: 2px auto;
+    font-size: 30px;
+}
+
+.box {
+    font-size: 20px;
+}
+
+.box p {
+    font-size: 1em; /*EM - Utiliza o tamanho de fonte do elemento pai ou seja 1 x 20px*/
+                    /*Se nao tiver elemento pai, pegara o do PAI do PAI, se nao encontrar vai pegar o padrao do browser (16px)*/
+}
+
+.box-2 {
+    font-size: 2rem; /*REM (Elemento root ou seja o elemento)*/
+}
+

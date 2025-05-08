@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    background-color: aliceblue;
+    font-size: 50px;
+    width: 75vw; /*View Width - dessa maneira a barra de rolagem é utilizada*/
+}
+
+.container-1{
+    background-color: antiquewhite;
+    height: 100vh; /*View Height*/
+    font-size: 10vmin; /*10% da viewPort menor ou seja 10% de 75vh*/
+
+}
+
+.container-2{
+    background-color: rgb(254, 226, 189);
+    height: 100vh; /*View Height*/
+    font-size: 10vmax; /*10% da viewPort maior ou seja 10% de 100vh*/
+}
+
+.container-3{
+    background-color: rgb(250, 214, 167);
+    height: 100vh; /*View Height*/
+
+}

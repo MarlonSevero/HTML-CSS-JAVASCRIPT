@@ -1,0 +1,94 @@
+
+/* SELETOR UNIVERSAL - USADO PARA RESET CSS '*' */
+
+* {
+    box-sizing: border-box;
+}
+
+/*
+div {
+    width: 90%;
+    height: 80px;
+    margin: 10px auto;
+    padding: 30px 0;
+    box-sizing: border-box;
+   border: 1px solid red;
+}
+*/
+
+
+/*INDENTIFICAMOS ID - # */
+/*ID NAO POODEM SER REPETIDOS NO HTML*/
+#conteudo {
+    background-color: red;
+    text-align: center;
+
+}
+
+/*PARA QUANDO QUEREMOS USAR VARIAS VEZES, PODEMOS USAR O CLASS*/
+/*INDENTIFICAMOS CLASS COM PONTO `.`*/
+
+.conteudo2 {
+    background-color: blue;
+    text-align: right;
+    color: aliceblue;
+}
+
+.conteudoEspecial{
+    color: aliceblue;
+    font-size: 20px;
+
+}
+
+.bg-black{
+    background-color: black;
+}
+
+/*SELETORES DE DESCENDENCIA`
+div p {
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: rgb(31, 31, 25);
+    padding: 10px;
+    border: 2px solid yellow;
+}
+*/
+
+ul {
+    list-style:disc;
+    color: black;
+
+}
+
+/*SELETOR ADJACENTE - IRA FORMATAR APOS A TAG UL O `P` 
+ul + p {
+    width: 300px;
+    height: 50px;
+    background-color: greenyellow;
+    color: black;
+    margin: 10px 0;
+}
+*/
+
+
+
+/*SELETOR IRMAO - DIFERENTE DO ADJACENTE PEGA DE TODOS
+ul ~ p {
+    width: 300px;
+    height: 50px;
+    background-color: greenyellow;
+    color: black;
+    margin: 10px 0;
+}
+*/
+
+/*SELETOR DE FILHOS DIRETO*/
+
+.conteiner > p {
+    width:300px;
+    height: 50px;
+    background-color: red;
+    color: white;
+    margin: 10px 0;
+}

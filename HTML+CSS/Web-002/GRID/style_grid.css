@@ -1,0 +1,73 @@
+body{
+    font-size: 1.6rem;
+    padding: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1{
+    font-size: 4rem;
+    margin: 1rem 0;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+
+.container {
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.box {
+    border: 1px solid black;
+    background-color: rgb(160, 148, 148);
+    min-height: 5rem;
+}
+
+.grid-container{
+    display: grid;
+}
+
+
+/*Com o grid template columns transformamos nossas divs em colunas*/
+.ex1{
+    grid-template-columns: 5rem 7rem 12rem 10rem;
+}
+
+/*porcentagem*/
+.ex2{
+    grid-template-columns: 20% 30% 10% 40%;
+}
+
+/*definir com fracao (proprio do grid)*/
+.ex3{
+    grid-template-columns: 1fr 2fr 1fr 4fr;
+}
+
+.ex4{
+    /*Quantidade de colunas que quer que repita, e o valor que quer repetir. Ultima coluna com 100px*/
+    grid-template-columns: repeat(3, 1fr) 100px;                                      
+}
+
+.ex5{
+    /*grid-template-columns: minmax(100px, 1fr) 2fr 2fr 1fr;*/
+    /*repeat + minmax*/
+    grid-template-columns: repeat(4, minmax(100px, 200px));                                      
+}
+
+
+.ex6{
+    /*tenta nao quebrar a linha, precisa de minmax*/
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr))         
+}
+
+
+.ex7{
+    /*nao se esforca para nao quebrar a linha, precisa de minmax*/
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr))         
+}
+
+.ex8{
+    grid-template-rows: 100px 200px 20px 40px;
+}

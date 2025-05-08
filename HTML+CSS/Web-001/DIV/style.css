@@ -1,0 +1,48 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(180, 249, 5);
+}
+
+/*containers*/
+/*div{
+    width: auto; /*padrao, px - fixo e % - relativo
+    height: 300px; precisa tomar cuidado
+    background-color: bisque;
+    Gera barra de rolagem, nao muito bem visto
+    overflow: auto; exemplo 1
+    overflow: hidden; exemplo 2
+}
+
+/*BOX MODEL: margin, border, padding, content */
+
+div{
+    width: 30%; /*temos o min-width e o max-width*/
+    min-height: 250px;
+    margin: 20px 60px 80px 120px; /*aplica nos 4 lados da DIV, ps. inverte os valores dependendo da quantidade de valores. Dois ex seria 20px eixo Y 60px eixo X*/
+
+    /*
+    background-color: rgb(202, 251, 178);
+    margin-top: 20px; podemos usar assim tambem
+    margin-left
+    margin-rigth  
+
+    border-width: 10px; aplicado internamente
+    border-style: solid;
+    border-color:blueviolet;
+    border: 2px dotted blueviolet;
+    padding: 20px; essa propriedade tem o valor adicionado ao container
+    box-sizing: border-box; /*ao usar padding, utilizamos o box-sizing*/
+
+    /*box-shadow*/
+
+    box-shadow: 1px 1px 2px 2px green;
+    border-radius: 10px;
+
+    background-image: url(/HTML_&_CSS/imagens/pexels.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; /*center = 50%*/
+    background-attachment: fixed;
+
+
+}

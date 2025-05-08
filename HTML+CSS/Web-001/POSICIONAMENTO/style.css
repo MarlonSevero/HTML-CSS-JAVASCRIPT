@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.box{
+    width: 200px;
+    height: 150px;
+    background-color: rgb(128, 168, 203);
+    margin: 10px;
+    /*display: inline; inline ele usa como espaco somente o tanto que tem de conteudo*/
+    display: block; /*por padrao as divs sao padrao de bloco, usam toda a linha*/
+    /*display: inline-block; conteudos diferentes o posicionamento muda*/
+    float: left; /*proximo elemento apos o elemento flutuando, herdara a propriedade float*/
+}
+
+h2 {
+    clear: both; /*assim podemos limpar a flutuacao (float)*/
+}
+
+/*FLEXBOX VAI CUIDAR DO ALINHAMENTO DOS ELEMENNTOS DENTRO DE UM CONTAINER.
+VAMOS TER O FLEX-CONTAINER(PAI) E FLEX-ITENS(FILHOS) */
+.container{
+    min-height: 600px;
+    width: 80%;
+    border: 1px solid rgb(185, 181, 181);
+    margin: 20px auto;
+    display: flex; /*convertendo o container em um flex container */
+    flex-direction: row; /*Propriedade para posicionar a direcao. PADRAO ROW (EM LINHA)*/
+    flex-wrap: wrap; /*para a quebra de linha na mudanca de layout, por padrao vem inativo*/
+}
+
+.box2{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(97, 97, 97);
+    margin:20px;
+}
+
+/*JUSTIFY-CONTENT*/
+.container-justify{
+    min-height: 900px;
+    width: 80%;
+    border: 1px solid rgb(185, 181, 181);
+    margin: 20px auto;
+    display: flex; /*obrigatorio usar para usar o justify-content*/
+    flex-direction: row;
+    justify-content: space-evenly; /*ajuste de posicionamento, flex-start(left), flex-end(right)*/
+
+}
+
+.box-justify{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(97, 97, 97);
+    margin:20px;
+}
+
+/*ALIGN ITENS*/
+
+.container-alignItens{
+    min-height: 900px;
+    width: 80%;
+    border: 1px solid rgb(185, 181, 181);
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline; /*Parecido com o justify-content, 
+                          center: centraliza na vertical
+                          stretch: pega a altura do container pai
+                          */
+    justify-content: center; /*utilizando o justify-contect:center centraliza horizontal*/
+    
+
+
+}
+
+.box-alignItens{
+    width: 200px;
+    background-color: rgb(97, 97, 97);
+    margin:20px;
+}
+
+/*
+FLEX-GROW
+Ela define a capacidade de um item flexível crescer para ocupar o espaço disponível dentro de seu contêiner pai.
+*/
+
+.container-flexGrow{
+    min-height: 900px;
+    width: 80%;
+    border: 1px solid rgb(185, 181, 181);
+    margin: 20px auto;
+    display: flex;
+    gap: 50px; /*espacamento linha/coluna*/
+}
+
+.box-flexGrow{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(170, 170, 170);
+    margin:20px;
+    padding: 10px;
+}
+
+.box-1 {flex-grow: 1;} /*o padrao do flex-grow é 0*/
+.box-2 {flex-grow: 2;}
+.box-3 {flex-basis: 120px;}
+
+/**/
+
+.container-position{
+    min-height: 600px;
+    width: 80%;
+    margin: 150px auto;
+    background-color: aquamarine;
+    position: relative; /*aqui realizamos o position para o filho se basear no position do pai*/
+}
+
+
+.box-position{
+    height: 250px;
+    width: 250px;
+    background-color: rgb(170, 170, 170);
+    margin:0;
+    position: absolute; /*relative: ira mudar a posicao dependendendo da onde ele foi inserido
+                          absolute: elemento onde foi inserido ou o body (se o pai nao tiver o position definido)*/
+    top: 50px;
+    left: 100px;
+}
+
+.menu {
+    width: 100%;
+    text-align: center;
+    background-color: blue;
+    color: aliceblue;
+    padding: 20px;
+    position: fixed; /*como se fosse outro contexto de exibicao*/
+    top: 0;
+    left: 0;
+    z-index: 1; /*PADRAO É ZERO, AO APLICAR O POSITION TEMOS AS PROPRIEDADES Z-INDEX / X-INDEX*/
+
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form id="dados" name="dados" method="post" accept="">
+        <fieldset>
+            <legend>Radio</legend>
+            <p>Conta</p>
+            <input type="radio" name="conta" id="conta1" value="free"><label for="conta1">
+                Free
+            </label>
+            <input type="radio" name="conta" id="conta2" value="normal"><label for="conta2">
+                Normal
+            </label>
+            <input type="radio" name="conta" id="conta3" value="business"><label for="conta3">
+                Business
+            </label>
+            <input type="radio" name="conta" id="conta4" value="plus"><label for="conta4">
+                Plus
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>CheckBox</legend>
+            <p>Preferencias</p>
+            <input type="checkbox" name="checkbx1" id="checkbx1" value="1"><label for="checkbx1">
+                Front End
+            </label>
+            <input type="checkbox" name="checkbx2" id="checkbx2" value="2"><label for="checkbx2">
+                Back End
+            </label>
+            <input type="checkbox" name="checkbx3" id="checkbx3" value="3"><label for="checkbx3">
+                Banco de Dados
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Select</legend>
+            <label for="alt">Atuacao</label>
+            <select name="alt" id="alt">
+                <option value="0" disabled selected>Selecione sua opcao</option>
+                <option value="1">Selecione sua alguma coisa 1</option>
+                <option value="2">Selecione sua alguma coisa 2</option>
+                <option value="3">Selecione sua alguma coisa 3</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Data List</legend>
+            <input list="languages" id="languages-list" >
+            <datalist id="languages">
+                <option value="HTML">
+                <option value="CSS">
+                <option value="JS">
+                <option value="Java">
+            </datalist>
+        </fieldset>
+
+        <fieldset>
+            <legend>Text Area</legend>
+            <label for="teste">Text Area</label><br>
+            <textarea name="teste" id="teste"></textarea>
+        </fieldset>
+
+        <h1>Botoes</h1>
+        <fieldset>
+            <input type="submit" name="" id="" value="Criar Conta">
+            <input type="reset" name="" id="" value="Limpar Dados">
+            <button type="reset">Tag Boatao</button>
+        </fieldset>
+
+        <h1>Atributos Importantes</h1>
+        <fieldset>
+            <h2>Required</h2>
+            <label for="user">User</label><br>
+            <input 
+            type="text" 
+            id="user" 
+            name="user" 
+            required
+            placeholder="Ex: placeholder" 
+            minlength="0"
+            maxlength="10">
+            <input type="submit" value="Disable (Desabilitado)" name="sub" id="sub">
+        </fieldset>
+
+    </form>
+</body>
+</html>

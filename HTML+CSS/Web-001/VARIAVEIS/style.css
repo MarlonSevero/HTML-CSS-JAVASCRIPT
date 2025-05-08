@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    width: 80%;
+    margin: 10px auto;
+    padding: var(--space-30);
+    background-color: var(--bg-color); /*utilizacao da variavel global*/
+
+}
+
+.container h1 {
+    margin: var(--space-30);
+    text-align: center;
+}
+
+.box2 {
+    --width-total: 60%; /*variavel local*/
+    --margin:25px;
+    width: var(--width-total);
+    margin: var(--margin) auto;
+    background-color: var(--bg-color);
+}

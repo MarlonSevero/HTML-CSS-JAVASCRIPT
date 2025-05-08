@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serifTahoma, sans-serif ;
+    background-color: rgb(241, 241, 241);
+    
+}
+
+.main{
+    height: 100vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.main img{
+    width: 50%;
+}
+
+.box{
+    width: 50%;
+    height: 90%;
+    color: var(--color-blue);
+    margin-bottom: var(--margin-base);
+}
+
+.box h2{
+    font-size: 5vmin;
+    margin: var(--margin-base) 0;
+}
+
+.box p{
+    width: 90%;
+    font-size: 3vmin;
+    margin: var(--margin-base) 0;
+}
+
+.formstyle{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.box-form-itens{
+    padding: 0 10px;
+    height: 90px;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.box-form-itens label{
+    font-size: 18px;
+}
+
+input, select{
+    width: 100%;
+    height: 40px;
+    padding-left: 40px;
+    font-size: 18px;
+}
+
+select{
+    padding-left: 10px;
+}
+
+.icon {
+    position: relative;
+    top: 28px;
+    left: 15px;
+}
+
+input:focus, select:focus{
+    outline-color: rgb(56, 18, 151);
+}
+
+.box-form-radio{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.radio{
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+}
+
+.box-form-button{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    margin-bottom:var(--margin-base);   
+}
+
+.box-form-button button{
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    background-color: var(--color-blue);
+    color: rgb(36, 89, 135);
+    border-radius: 5px;
+    font-size: 1.3rem;
+    border: 0;
+}
+
+.arrow {
+    color: rgb(56, 18, 151);
+    margin-left: 5px;
+}
+
+label:not(.radio label, .select){
+    margin-bottom: -10px;
+}

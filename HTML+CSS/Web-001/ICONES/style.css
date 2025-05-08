@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.icon {
+    font-size: 40px;    border-radius: 10px; color: rgb(241, 0, 237);
+}
+
+.icon:hover{
+    background-color: rgb(101, 221, 251);
+    font-size: 75px;
+    border: transparent;
+
+}

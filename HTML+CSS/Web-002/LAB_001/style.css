@@ -1,0 +1,142 @@
+*{
+    font-size: 1.6rem;
+    padding: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.header{
+    background-color: rgb(167, 166, 161);
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "logo nav";
+}
+
+/*é interessante usar o posicionamento das Divs com GRID e o posicionamento do conteudo com o FLEX*/
+
+.logo{
+    grid-area: logo;
+}
+
+nav{ /*isso aqui é uma tag*/
+    grid-area: nav;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+.hero{
+    background-color: black;
+    color: aliceblue;
+    padding: 5rem;
+    text-align: center;
+    display: grid;
+    grid-template-areas: "title" "subtitle";
+    justify-content: center;
+    align-items: center;
+    height: 40rem;
+}
+
+.hero h1{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    grid-area: title;
+}
+
+.hero p{
+    font-size: 2rem;
+    grid-area: subtitle;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    grid-template-areas: 
+                        "card1 card2 card3"
+                        "card4 card5 card6";
+    margin: 5rem 0;
+    padding: 0 2rem;
+}
+
+.card{
+    border-radius: 5px;
+    background-color:  rgb(167, 166, 161);
+    padding: 2rem;
+    text-align: center;
+}
+
+.card h2{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.card p{
+    font-size: 1.8rem;
+    color: rgb(51, 51, 50);
+}
+
+.card img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.footer{
+    background-color:  rgb(167, 166, 161);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "copyrigth";
+}
+
+.footer-content{
+    grid-area: copyrigth;
+}
+
+
+.card1{
+    grid-area: card1;
+}
+
+.card2{
+    grid-area: card2;
+}
+
+.card3{
+    grid-area: card3;
+}
+
+.card4 {
+    grid-area: card4;
+}
+
+.card1{
+    grid-area: card5;
+}
+
+.card1{
+    grid-area: card6;
+}
